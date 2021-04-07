@@ -121,8 +121,8 @@ class plotter(object):
             mask = np.triu(matrix)
             LowerMatrix = np.tril(matrix)
 
-            CMS_hgg_mass_row = matrix_cp.iloc[-2, :] ##-- second to last row?
-            CMS_hgg_mass_row.columns = self.labels
+            #CMS_hgg_mass_row = matrix_cp.iloc[-2, :] ##-- second to last row?
+            #CMS_hgg_mass_row.columns = self.labels
             # CMS_hgg_mass_row_corr = CMS_hgg_mass_row.corr(method='spearman')
 
             # print("CMS_hgg_mass_row:",CMS_hgg_mass_row)
@@ -288,8 +288,8 @@ class plotter(object):
         
         class_dict = {
             0 : "HH",
-            1 : "H",
-            2 : "Bkg"
+            1 : "ggjets",
+            2 : "QCD"
         }
 
         datasets = ["test", "train"]
